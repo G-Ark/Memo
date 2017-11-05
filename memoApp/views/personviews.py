@@ -15,6 +15,8 @@ def person_list(request):
         return JsonResponse(serializer.data, safe=False)
 
     elif request.method == 'POST':
+#        get_arg1 = request.POST.get('arg1', None)
+#        get_arg2 = request.GET.get('arg2', None)
         data = JSONParser().parse(request)
         serializer = PersonSerializer(data=data)
         if serializer.is_valid():

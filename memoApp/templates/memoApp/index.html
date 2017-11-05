@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dest/styles.css">
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="app.js"></script>
+        <script src="dest/scripts.js"></script>
+    </head>
+    <body ng-app="resumeApp">
+        <nav role="navigation" class="navbar navbar-default">
+            <nav class="navbar navbar-default" role="navigation">
+                <a class="navbar-brand" ui-sref="home">My Resume</a>
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav">
+                        <li><a ui-sref="home">Home</a></li>
+                        <li><a ui-sref="about">About me</a></li>
+                        <li><a ui-sref="work">Projects</a></li>
+                        <li><a ui-sref="hire">Hire me</a></li>
+                        <li><a ui-sref="contact">Contact me</a></li>
+                    </ul>
+                </div>
+                </nav>
+                </nav>
+                <div ui-view></div>
+            </div>
+        </body>
+    </html>
