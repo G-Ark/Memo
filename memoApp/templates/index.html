@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dest/styles.css' %} ">
+    <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %} "></script>
+    <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %} "></script>
+    <script src="{% static 'bower_components/angular/angular.min.js' %} "></script>
+    <script src="{% static 'bower_components/angular-route/angular-route.min.js' %} "></script>
+    <script src="{% static 'dest/scripts.js' %} "></script>
+</head>
+{% verbatim %}
+<body ng-app="memoApp">
+    <h2> Welcome </h2>
+        <p>{{ sampleText }}</p>
+        <a href="#/memos"> View Memos</a>
+        <ng-view></ng-view>
+</body>
+{% endverbatim %}
+</html>

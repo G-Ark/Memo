@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^persons/$', views.person_list),
     url(r'^newmemo/$', views.new_memo),
     url(r'^memopersons/$', views.memo_person_list),
+    url(r'^$', views.home, name='home'),
 ]

@@ -1,0 +1,40 @@
+foo {
+  bar: '1'; }
+
+foo {
+  bar: '2'; }
+
+foo {
+  bar: '3'; }
+
+foo {
+  bar: '4'; }
+
+/* This contains constants to be used throughtout the css files */
+.sample {
+  color: #226676; }
+
+.fill-text {
+  white-space: pre-wrap; }
+
+#navbar {
+  width: 80%;
+  height: 23px; }
+
+#navbar ul {
+  list-style-type: none; }
+
+#navbar li {
+  float: left; }
+  #navbar li a {
+    font-weight: bold; }
+
+div {
+  width: foo(42px);
+  height: bar(42px); }
+
+div {
+  color: foo("bar"); }
+
+.outside {
+  color: red; }
